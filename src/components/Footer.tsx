@@ -27,9 +27,9 @@ const Footer = () => {
 
   return (
     <footer className="bg-gradient-to-br from-primary-800 to-primary-900 text-white relative overflow-hidden">
-      {/* Background decorations */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-sage-600/20 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-lime-600/20 rounded-full blur-3xl"></div>
+      {/* Background decorations - better desktop positioning */}
+      <div className="absolute top-0 right-0 w-[450px] h-[450px] bg-sage-600/8 rounded-full blur-3xl transform translate-x-2/3 -translate-y-2/3"></div>
+      <div className="absolute bottom-0 left-0 w-[350px] h-[350px] bg-lime-600/8 rounded-full blur-3xl transform -translate-x-2/3 translate-y-2/3"></div>
 
       <div className="relative z-10">
         {/* Main Footer Content */}

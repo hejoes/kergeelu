@@ -9,20 +9,19 @@ const HeroSection = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Organic background with food-inspired shapes */}
+      {/* Clean background with subtle decorative elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-cream-50 via-sage-50 to-lime-50">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-sage-200/30 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-lime-200/20 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-128 h-128 bg-primary-100/20 rounded-full blur-3xl"></div>
+        {/* Large background circles - better desktop positioning */}
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-sage-200/15 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-lime-200/10 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
 
-        {/* Floating food elements */}
-        <div className="absolute top-32 right-20 w-16 h-16 bg-lime-400/20 rounded-full animate-pulse"></div>
-        <div className="absolute bottom-32 left-20 w-12 h-12 bg-sage-400/20 rounded-full animate-pulse delay-1000"></div>
-        <div className="absolute top-64 left-32 w-8 h-8 bg-gold-400/30 rounded-full animate-pulse delay-500"></div>
+        {/* Subtle accent circles - positioned more strategically for desktop */}
+        <div className="hidden xl:block absolute top-1/3 left-1/5 w-32 h-32 bg-gold-200/8 rounded-full blur-2xl"></div>
+        <div className="hidden xl:block absolute bottom-1/4 right-1/4 w-24 h-24 bg-sage-300/10 rounded-full blur-xl"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left order-2 lg:order-1">
             {/* Personal intro badge */}
@@ -34,7 +33,7 @@ const HeroSection = () => {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-800 mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-primary-800 mb-4 lg:mb-6 leading-tight">
               Heal Your Body with{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-500 to-sage-500 font-serif">
                 Living Foods
@@ -42,7 +41,7 @@ const HeroSection = () => {
             </h1>
 
             {/* Personal story intro */}
-            <p className="text-lg sm:text-xl text-primary-600 mb-8 leading-relaxed max-w-2xl">
+            <p className="text-base sm:text-lg lg:text-xl text-primary-600 mb-6 lg:mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
               After my own transformative healing journey, I discovered the
               incredible power of whole foods and gentle detoxification. Now
               I&apos;m passionate about sharing these life-changing methods to
@@ -50,7 +49,7 @@ const HeroSection = () => {
             </p>
 
             {/* Simple trust indicators */}
-            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-8 mb-10 text-sm text-sage-600">
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 lg:gap-8 mb-6 lg:mb-10 text-sm text-sage-600">
               <div className="flex items-center space-x-2">
                 <Apple className="w-5 h-5 text-lime-500" />
                 <span>Whole Food Healing</span>
@@ -62,17 +61,20 @@ const HeroSection = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col gap-3 justify-center lg:justify-start lg:flex-row lg:gap-4">
               <a
                 href="#program"
-                className="group bg-gradient-to-r from-lime-400 to-sage-400 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-warm transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"
+                className="group bg-gradient-to-r from-lime-400 to-sage-400 text-white px-6 lg:px-8 py-3 lg:py-4 rounded-full font-semibold text-base lg:text-lg hover:shadow-warm transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"
               >
-                <span>Join the Liver Rescue Program</span>
+                <span className="hidden sm:inline">
+                  Join the Liver Rescue Program
+                </span>
+                <span className="sm:hidden">Join My Program</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
               <a
                 href="#about"
-                className="bg-white/80 backdrop-blur-sm text-primary-700 px-8 py-4 rounded-full font-semibold text-lg border border-sage-200 hover:bg-white hover:shadow-soft transition-all duration-300"
+                className="bg-white/80 backdrop-blur-sm text-primary-700 px-6 lg:px-8 py-3 lg:py-4 rounded-full font-semibold text-base lg:text-lg border border-sage-200 hover:bg-white hover:shadow-soft transition-all duration-300"
               >
                 My Healing Story
               </a>
@@ -81,10 +83,10 @@ const HeroSection = () => {
 
           {/* Right Content - Professional Photo */}
           <div className="relative order-1 lg:order-2">
-            <div className="relative">
+            <div className="relative max-w-sm mx-auto lg:max-w-none">
               {/* Main photo container */}
-              <div className="relative bg-gradient-to-br from-sage-100 to-lime-100 rounded-4xl p-6 shadow-warm">
-                <div className="aspect-[4/5] rounded-3xl overflow-hidden border-4 border-white/50">
+              <div className="relative bg-gradient-to-br from-sage-100 to-lime-100 rounded-4xl p-4 lg:p-6 shadow-warm">
+                <div className="aspect-[4/5] lg:aspect-[4/5] rounded-3xl overflow-hidden border-4 border-white/50">
                   <Image
                     src="/portree.jpg"
                     alt="Professional photo"
@@ -96,20 +98,11 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              {/* Floating elements with food theme */}
-              <div className="absolute -top-6 -right-6 w-20 h-20 bg-gradient-to-br from-lime-400 to-sage-400 rounded-full flex items-center justify-center shadow-lg">
-                <Apple className="w-10 h-10 text-white" />
-              </div>
-
-              <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-gradient-to-br from-gold-400 to-yellow-400 rounded-full flex items-center justify-center shadow-lg">
-                <Leaf className="w-8 h-8 text-white" />
-              </div>
-
-              {/* Personal touch card */}
-              <div className="absolute -bottom-8 -right-8 bg-white rounded-2xl p-6 shadow-soft border border-sage-100 max-w-xs">
+              {/* Personal touch card - repositioned for mobile */}
+              <div className="absolute -bottom-4 -right-4 lg:-bottom-8 lg:-right-8 bg-white rounded-2xl p-3 lg:p-6 shadow-soft border border-sage-100 max-w-xs">
                 <div className="text-center">
-                  <div className="text-2xl mb-2">💚</div>
-                  <p className="text-sm text-primary-700 font-medium mb-1">
+                  <div className="text-lg lg:text-2xl mb-1 lg:mb-2">💚</div>
+                  <p className="text-xs lg:text-sm text-primary-700 font-medium mb-1">
                     &ldquo;Your body knows how to heal&rdquo;
                   </p>
                   <p className="text-xs text-sage-600">- My philosophy</p>

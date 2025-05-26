@@ -34,12 +34,12 @@ const AboutSection = () => {
 
   return (
     <section id="about" className="py-20 bg-white relative overflow-hidden">
-      {/* Background decorations */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-sage-100 rounded-full blur-3xl opacity-50"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-lime-100 rounded-full blur-3xl opacity-30"></div>
+      {/* Background decorations - better desktop positioning */}
+      <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-sage-100/20 rounded-full blur-3xl transform -translate-x-3/4 -translate-y-3/4"></div>
+      <div className="absolute bottom-0 right-0 w-[350px] h-[350px] bg-lime-100/15 rounded-full blur-3xl transform translate-x-3/4 translate-y-3/4"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Content - Story */}
           <div>
             <div className="mb-8">

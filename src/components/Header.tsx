@@ -85,15 +85,6 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <div className="pt-4">
-                <a
-                  href="#program"
-                  className="block w-full bg-gradient-to-r from-lime-400 to-sage-400 text-white px-6 py-3 rounded-full font-semibold text-center"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Join Waitlist
-                </a>
-              </div>
             </div>
           </div>
         )}

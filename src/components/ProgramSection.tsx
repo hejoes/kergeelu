@@ -64,10 +64,12 @@ const ProgramSection = () => {
       id="program"
       className="py-20 bg-gradient-to-br from-cream-50 to-sage-50 relative overflow-hidden"
     >
-      {/* Background Elements */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-lime-200/20 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-64 h-64 bg-sage-200/30 rounded-full blur-3xl"></div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-128 h-128 bg-gold-200/10 rounded-full blur-3xl"></div>
+      {/* Background Elements - better desktop positioning */}
+      <div className="absolute top-0 right-0 w-[450px] h-[450px] bg-lime-200/12 rounded-full blur-3xl transform translate-x-2/3 -translate-y-2/3"></div>
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-sage-200/15 rounded-full blur-3xl transform -translate-x-2/3 translate-y-2/3"></div>
+
+      {/* Subtle center accent - positioned better for desktop */}
+      <div className="hidden 2xl:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gold-200/3 rounded-full blur-3xl"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
@@ -88,7 +90,7 @@ const ProgramSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 lg:mb-20">
           {/* Program Details */}
           <div>
             <div className="bg-white rounded-3xl p-8 shadow-soft">
