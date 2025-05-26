@@ -36,37 +36,19 @@ const ProgramSection = () => {
       icon: Heart,
       title: "28-Day Liver Rescue Protocol",
       description:
-        "Gentle yet powerful liver cleansing using Medical Medium protocols",
+        "My gentle yet powerful liver cleansing method that I&apos;ve perfected through years of research and personal experience",
     },
     {
       icon: Sparkles,
       title: "Heavy Metal Detox Smoothies",
       description:
-        "Daily smoothie recipes to safely remove toxic metals from your body",
+        "My signature smoothie recipes designed to safely and effectively remove toxins while nourishing your body",
     },
     {
       icon: Leaf,
       title: "Healing Foods Guide",
       description:
-        "Complete guide to the most powerful healing foods and how to use them",
-    },
-  ];
-
-  const testimonials = [
-    {
-      name: "Sarah M.",
-      text: "This program changed my life! I have more energy than I've had in years.",
-      rating: 5,
-    },
-    {
-      name: "Michael K.",
-      text: "The liver rescue protocol helped me feel clearer and more focused.",
-      rating: 5,
-    },
-    {
-      name: "Emma L.",
-      text: "Amazing results in just 4 weeks. I'm sleeping better and feeling incredible.",
-      rating: 5,
+        "My personal guide to the most powerful healing foods I&apos;ve discovered, with exactly how to use them for maximum benefit",
     },
   ];
 
@@ -99,9 +81,10 @@ const ProgramSection = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-lime-400 to-sage-400 rounded-full mx-auto mb-6"></div>
           <p className="text-xl text-primary-600 max-w-3xl mx-auto leading-relaxed">
-            Transform your health in 28 days with our comprehensive liver
-            cleansing program based on Medical Medium protocols and healing
-            foods.
+            Transform your health in 28 days with my comprehensive liver
+            cleansing program. I&apos;ll guide you through gentle, proven
+            methods using powerful healing foods that have changed my life and
+            countless others.
           </p>
         </div>
 
@@ -165,7 +148,7 @@ const ProgramSection = () => {
               {/* Bonuses */}
               <div className="mb-8">
                 <h4 className="font-semibold text-primary-800 mb-4">
-                  What's Included:
+                  What&apos;s Included:
                 </h4>
                 <div className="space-y-2">
                   {bonuses.map((bonus, index) => (
@@ -187,11 +170,12 @@ const ProgramSection = () => {
                   <Gift className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-primary-800 mb-2">
-                  Get Early Access
+                  Join My Healing Community
                 </h3>
                 <p className="text-primary-600">
-                  Join our waitlist and be the first to know when the program
-                  launches. Plus, get exclusive bonuses!
+                  I&apos;d love to have you join my waitlist! You&apos;ll be the
+                  first to know when my program opens, plus I&apos;ll share
+                  exclusive healing tips and special bonuses just for you.
                 </p>
               </div>
 
@@ -243,11 +227,12 @@ const ProgramSection = () => {
                     <CheckCircle className="w-8 h-8 text-lime-500" />
                   </div>
                   <h4 className="text-xl font-bold text-primary-800 mb-2">
-                    Welcome to the Waitlist!
+                    Welcome to My Community! 💚
                   </h4>
                   <p className="text-primary-600">
-                    Thank you for joining! You'll be the first to know when the
-                    program launches.
+                    I&apos;m so excited to have you here! You&apos;ll be the
+                    first to know when my program opens, and I can&apos;t wait
+                    to support you on your healing journey.
                   </p>
                 </div>
               )}
@@ -256,57 +241,15 @@ const ProgramSection = () => {
               <div className="mt-6 p-4 bg-gradient-to-r from-gold-50 to-yellow-50 rounded-xl border border-gold-200">
                 <div className="text-center">
                   <p className="text-sm font-semibold text-gold-700 mb-1">
-                    🎉 Early Bird Special
+                    🎉 Special Gift for You
                   </p>
                   <p className="text-xs text-gold-600">
-                    Waitlist members get 30% off when we launch!
+                    As my way of saying thank you, waitlist members get 30% off
+                    when I launch!
                   </p>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Testimonials */}
-        <div className="mb-16">
-          <h3 className="text-3xl font-bold text-primary-800 text-center mb-12">
-            What Our Community Says
-          </h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white rounded-2xl p-6 shadow-soft">
-                <div className="flex items-center mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star
-                      key={i}
-                      className="w-5 h-5 text-gold-400 fill-current"
-                    />
-                  ))}
-                </div>
-                <p className="text-primary-600 mb-4 italic">
-                  "{testimonial.text}"
-                </p>
-                <p className="font-semibold text-primary-800">
-                  - {testimonial.name}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-lime-500 to-sage-500 rounded-3xl p-8 text-white">
-            <h3 className="text-3xl font-bold mb-4">
-              Ready to Transform Your Health?
-            </h3>
-            <p className="text-xl mb-6 opacity-90">
-              Join hundreds of others who have already started their healing
-              journey.
-            </p>
-            <button className="bg-white text-lime-600 font-semibold py-3 px-8 rounded-xl hover:bg-gray-50 transition-all duration-200 transform hover:scale-105">
-              Learn More About the Program
-            </button>
           </div>
         </div>
       </div>

@@ -25,8 +25,9 @@ const AboutSection = () => {
     },
     {
       icon: Sparkles,
-      title: "Natural Protocols",
-      description: "Following Anthony William's proven healing methods",
+      title: "Intuitive Healing",
+      description:
+        "Listening to your body&apos;s wisdom and honoring its signals",
       color: "text-gold-500",
     },
   ];
@@ -53,34 +54,37 @@ const AboutSection = () => {
 
             <div className="space-y-6 text-primary-600 leading-relaxed">
               <p className="text-lg">
-                My path to wellness began when conventional medicine
-                couldn&apos;t provide the answers I desperately needed. After
-                years of struggling with my health, I discovered Anthony
-                Williams&apos; Medical Medium protocols.
+                My wellness journey began when I realized that my body was
+                trying to tell me something important. After years of feeling
+                disconnected from my health, I started exploring the profound
+                healing power of whole foods and gentle detoxification.
               </p>
 
               <p>
-                The transformation was remarkable. Through gentle liver
-                cleansing, strategic detoxification, and embracing healing
-                foods, I experienced what true vitality feels like. This journey
-                opened my eyes to the incredible healing power that lies within
-                each of us.
+                The transformation was life-changing. Through my own research
+                and experimentation with liver cleansing, mindful nutrition, and
+                healing foods, I discovered what it truly means to feel vibrant
+                and alive. This journey taught me that our bodies have an
+                incredible capacity to heal when given the right support.
               </p>
 
               <p>
-                Now, I&apos;m passionate about sharing these life-changing
-                principles with others who are ready to embark on their own
-                healing journey. Every person I work with reminds me of the
-                miracle that happens when we give our bodies what they truly
-                need.
+                Now, I&apos;m deeply passionate about sharing these discoveries
+                with others who are ready to reclaim their health. Every person
+                I guide reminds me of the beautiful transformation that&apos;s
+                possible when we listen to our bodies and nourish them with
+                intention and love.
               </p>
             </div>
 
             {/* CTA */}
             <div className="mt-12">
-              <button className="bg-gradient-to-r from-lime-400 to-sage-400 text-white px-8 py-4 rounded-full font-semibold hover:shadow-warm transition-all duration-300 transform hover:scale-105">
-                Start Your Journey
-              </button>
+              <a
+                href="#program"
+                className="inline-block bg-gradient-to-r from-lime-400 to-sage-400 text-white px-8 py-4 rounded-full font-semibold hover:shadow-warm transition-all duration-300 transform hover:scale-105"
+              >
+                Join My Program
+              </a>
             </div>
           </div>
 
@@ -88,7 +92,7 @@ const AboutSection = () => {
           <div className="relative">
             <div className="bg-gradient-to-br from-sage-50 to-cream-100 rounded-4xl p-8 shadow-soft">
               <h3 className="text-2xl font-bold text-primary-800 mb-8 text-center">
-                Healing Principles I Follow
+                My Healing Philosophy
               </h3>
 
               <div className="grid grid-cols-2 gap-6">
@@ -113,12 +117,12 @@ const AboutSection = () => {
               {/* Decorative quote */}
               <div className="mt-8 text-center">
                 <div className="bg-white rounded-2xl p-6 shadow-soft border border-sage-100">
-                  <div className="text-3xl mb-3">🌿</div>
+                  <div className="text-3xl mb-3">💚</div>
                   <p className="text-primary-700 font-medium italic">
-                    &ldquo;The right information is healing information&rdquo;
+                    &ldquo;Your body is your greatest teacher&rdquo;
                   </p>
                   <p className="text-sm text-sage-600 mt-2">
-                    - Anthony William
+                    - My guiding principle
                   </p>
                 </div>
               </div>

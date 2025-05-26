@@ -43,21 +43,21 @@ const HeroSection = () => {
 
             {/* Personal story intro */}
             <p className="text-lg sm:text-xl text-primary-600 mb-8 leading-relaxed max-w-2xl">
-              I discovered the transformative power of Medical Medium protocols
-              through my own healing journey. Now I help others unlock their
-              body&apos;s natural healing potential through gentle cleansing and
-              superfood nutrition.
+              After my own transformative healing journey, I discovered the
+              incredible power of whole foods and gentle detoxification. Now
+              I&apos;m passionate about sharing these life-changing methods to
+              help you reclaim your vitality and feel amazing in your body.
             </p>
 
             {/* Simple trust indicators */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-8 mb-10 text-sm text-sage-600">
               <div className="flex items-center space-x-2">
                 <Apple className="w-5 h-5 text-lime-500" />
-                <span>Medical Medium Protocols</span>
+                <span>Whole Food Healing</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Leaf className="w-5 h-5 text-sage-500" />
-                <span>Natural Healing Focus</span>
+                <span>Gentle Detox Methods</span>
               </div>
             </div>
 
@@ -108,11 +108,11 @@ const HeroSection = () => {
               {/* Personal touch card */}
               <div className="absolute -bottom-8 -right-8 bg-white rounded-2xl p-6 shadow-soft border border-sage-100 max-w-xs">
                 <div className="text-center">
-                  <div className="text-2xl mb-2">🌱</div>
+                  <div className="text-2xl mb-2">💚</div>
                   <p className="text-sm text-primary-700 font-medium mb-1">
-                    &ldquo;Food is medicine&rdquo;
+                    &ldquo;Your body knows how to heal&rdquo;
                   </p>
-                  <p className="text-xs text-sage-600">- Anthony William</p>
+                  <p className="text-xs text-sage-600">- My philosophy</p>
                 </div>
               </div>
             </div>

@@ -14,16 +14,15 @@ import {
 const Footer = () => {
   const quickLinks = [
     { name: "About", href: "#about" },
-    { name: "Programs", href: "#programs" },
-    { name: "Blog", href: "#blog" },
+    { name: "Program", href: "#program" },
     { name: "Contact", href: "#contact" },
   ];
 
-  const programs = [
-    { name: "Liver Rescue", href: "#programs" },
-    { name: "Heavy Metal Detox", href: "#programs" },
-    { name: "Complete Renewal", href: "#programs" },
-    { name: "Discovery Call", href: "#contact" },
+  const programInfo = [
+    { name: "Liver Rescue Program", href: "#program" },
+    { name: "Join Waitlist", href: "#program" },
+    { name: "Early Access", href: "#program" },
+    { name: "Contact Us", href: "#contact" },
   ];
 
   return (
@@ -47,15 +46,16 @@ const Footer = () => {
                     Pure Wellness
                   </span>
                   <span className="text-sm text-sage-200 -mt-1">
-                    Medical Medium Expert
+                    Holistic Nutrition Guide
                   </span>
                 </div>
               </div>
 
               <p className="text-sage-200 leading-relaxed mb-6">
-                Transforming lives through the healing power of Medical Medium
-                protocols. Your journey to optimal health starts with natural,
-                gentle healing.
+                I&apos;m here to guide you on your healing journey with gentle,
+                natural methods that honor your body&apos;s wisdom. Together,
+                we&apos;ll unlock your vitality using the power of whole foods
+                and mindful nutrition.
               </p>
 
               {/* Social Links */}
@@ -99,18 +99,18 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Programs */}
+            {/* Program */}
             <div>
-              <h3 className="text-lg font-bold mb-6">Programs</h3>
+              <h3 className="text-lg font-bold mb-6">Our Program</h3>
               <ul className="space-y-3">
-                {programs.map((program, index) => (
+                {programInfo.map((item, index) => (
                   <li key={index}>
                     <a
-                      href={program.href}
+                      href={item.href}
                       className="text-sage-200 hover:text-lime-400 transition-colors duration-200 flex items-center space-x-2 group"
                     >
                       <span className="w-1 h-1 bg-lime-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                      <span>{program.name}</span>
+                      <span>{item.name}</span>
                     </a>
                   </li>
                 ))}
@@ -123,18 +123,17 @@ const Footer = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-lime-400" />
-                  <span className="text-sage-200">hello@purewellness.com</span>
+                  <span className="text-sage-200">henrijoesalu@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-lime-400" />
-                  <span className="text-sage-200">+1 (555) 123-4567</span>
+                  <span className="text-sage-200">+372 55555555</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <MapPin className="w-5 h-5 text-lime-400 mt-1" />
                   <span className="text-sage-200">
-                    Virtual consultations
+                    Estonia
                     <br />
-                    Serving clients worldwide
                   </span>
                 </div>
               </div>

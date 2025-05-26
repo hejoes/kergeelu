@@ -27,7 +27,7 @@ const Header = () => {
                 Pure Wellness
               </span>
               <span className="text-xs text-sage-600 -mt-1">
-                Medical Medium Expert
+                Holistic Nutrition Guide
               </span>
             </div>
           </div>

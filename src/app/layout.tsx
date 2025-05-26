@@ -13,11 +13,11 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Transform Your Health | Medical Medium Nutrition Expert",
+  title: "Transform Your Health | Pure Wellness Holistic Nutrition",
   description:
-    "Discover the power of natural healing through Medical Medium principles. Expert guidance on liver cleansing, toxic load reduction, and superfood nutrition for optimal health.",
+    "Discover the power of natural healing through gentle, proven methods. Expert guidance on liver cleansing, whole food nutrition, and holistic wellness for optimal health and vitality.",
   keywords:
-    "Medical Medium, nutrition expert, liver cleanse, detox, superfoods, natural healing, Anthony Williams",
+    "holistic nutrition, liver cleanse, detox, whole foods, natural healing, wellness coach, nutrition expert, health transformation",
 };
 
 export default function RootLayout({
