@@ -6,7 +6,6 @@ import {
   Sparkles,
   ArrowRight,
   Clock,
-  Apple,
   Droplets,
 } from "lucide-react";
 
