@@ -63,13 +63,19 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="group bg-gradient-to-r from-lime-400 to-sage-400 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-warm transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
-                <span>Explore Healing Programs</span>
+              <a
+                href="#program"
+                className="group bg-gradient-to-r from-lime-400 to-sage-400 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-warm transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"
+              >
+                <span>Join the Liver Rescue Program</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button className="bg-white/80 backdrop-blur-sm text-primary-700 px-8 py-4 rounded-full font-semibold text-lg border border-sage-200 hover:bg-white hover:shadow-soft transition-all duration-300">
+              </a>
+              <a
+                href="#about"
+                className="bg-white/80 backdrop-blur-sm text-primary-700 px-8 py-4 rounded-full font-semibold text-lg border border-sage-200 hover:bg-white hover:shadow-soft transition-all duration-300"
+              >
                 My Healing Story
-              </button>
+              </a>
             </div>
           </div>
 

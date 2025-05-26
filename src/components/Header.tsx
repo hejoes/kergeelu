@@ -9,8 +9,7 @@ const Header = () => {
   const navigation = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
-    { name: "Programs", href: "#programs" },
-    { name: "Blog", href: "#blog" },
+    { name: "Program", href: "#program" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -49,9 +48,12 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center space-x-4">
-            <button className="bg-gradient-to-r from-lime-400 to-sage-400 text-white px-6 py-3 rounded-full font-semibold hover:shadow-warm transition-all duration-300 transform hover:scale-105">
-              Start Your Journey
-            </button>
+            <a
+              href="#program"
+              className="bg-gradient-to-r from-lime-400 to-sage-400 text-white px-6 py-3 rounded-full font-semibold hover:shadow-warm transition-all duration-300 transform hover:scale-105"
+            >
+              Join Waitlist
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -84,9 +86,13 @@ const Header = () => {
                 </a>
               ))}
               <div className="pt-4">
-                <button className="w-full bg-gradient-to-r from-lime-400 to-sage-400 text-white px-6 py-3 rounded-full font-semibold">
-                  Start Your Journey
-                </button>
+                <a
+                  href="#program"
+                  className="block w-full bg-gradient-to-r from-lime-400 to-sage-400 text-white px-6 py-3 rounded-full font-semibold text-center"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Join Waitlist
+                </a>
               </div>
             </div>
           </div>
