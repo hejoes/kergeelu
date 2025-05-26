@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #f0f9f0;
+  --color-primary-100: #dcf2dc;
+  --color-primary-200: #bce5bc;
+  --color-primary-300: #87d187;
+  --color-primary-400: #5cb85c;
+  --color-primary-500: #2d5016;
+  --color-primary-600: #254012;
+  --color-primary-700: #1e320e;
+  --color-primary-800: #17240a;
+  --color-primary-900: #0f1607;
+
+  --color-sage-50: #f6f8f4;
+  --color-sage-100: #e9f0e6;
+  --color-sage-200: #d4e1ce;
+  --color-sage-300: #b3c9a8;
+  --color-sage-400: #87a96b;
+  --color-sage-500: #6b8a52;
+  --color-sage-600: #526b3f;
+  --color-sage-700: #425533;
+  --color-sage-800: #36452b;
+  --color-sage-900: #2d3a25;
+
+  --color-cream-50: #fefefe;
+  --color-cream-100: #fdfdfc;
+  --color-cream-200: #f9f8f6;
+  --color-cream-300: #f7f3e9;
+  --color-cream-400: #f0e9d8;
+  --color-cream-500: #e6d5b7;
+  --color-cream-600: #d4b896;
+  --color-cream-700: #c19a75;
+  --color-cream-800: #a67c5a;
+  --color-cream-900: #8b6347;
+
+  --color-gold-50: #fefbf3;
+  --color-gold-100: #fdf6e3;
+  --color-gold-200: #faecc4;
+  --color-gold-300: #f6dd9b;
+  --color-gold-400: #f0c670;
+  --color-gold-500: #d4af37;
+  --color-gold-600: #c19b2e;
+  --color-gold-700: #a18426;
+  --color-gold-800: #846d20;
+  --color-gold-900: #6d5a1c;
+
+  --color-lime-50: #f7ffed;
+  --color-lime-100: #ecffd9;
+  --color-lime-200: #d9ffb3;
+  --color-lime-300: #bfff7d;
+  --color-lime-400: #9acd32;
+  --color-lime-500: #7fb028;
+  --color-lime-600: #6a9420;
+  --color-lime-700: #57781b;
+  --color-lime-800: #475f19;
+  --color-lime-900: #3c5018;
+
+  --font-family-sans: Inter, system-ui, sans-serif;
+  --font-family-serif: "Playfair Display", serif;
+
+  --spacing-18: 4.5rem;
+  --spacing-88: 22rem;
+  --spacing-128: 32rem;
+
+  --border-radius-4xl: 2rem;
+
+  --box-shadow-soft: 0 4px 20px rgba(45, 80, 22, 0.1);
+  --box-shadow-warm: 0 8px 30px rgba(212, 175, 55, 0.15);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-family-sans);
+  }
+
+  .font-serif {
+    font-family: var(--font-family-serif);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .shadow-soft {
+    box-shadow: var(--box-shadow-soft);
+  }
+
+  .shadow-warm {
+    box-shadow: var(--box-shadow-warm);
+  }
+}
